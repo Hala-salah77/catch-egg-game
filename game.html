@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    <title>Catch Eggs</title>
+</head>
+<body class="game-body"> 
+
+     <!--Start Adio Sound -->
+    <audio id="farmAudio">
+        <source src="Country_Music_Farm_Game.mp3" type="audio/mp3"/>
+    </audio>
+      <!--End Adio Sound -->
+
+    <div id="container">
+        <div class="position-absolute playerName">Player : <span id="playerName"></span> </div>
+        <div class="position-absolute" id="lastGameDate">
+            <span class="date1"></span><br>
+            <span class="date2"></span>
+        </div>
+        <div class="position-absolute" id="time"></div>
+        <div id="pause" class="position-absolute"><img src="images/icons8-pause-50.png" alt=""></div>
+        <div class="score"><span>Score :</span><span id="score"></span></div>
+        <div class="missed"><span>Missed :</span><span id="missed"></span></div>
+
+        <div id="eggs"></div>
+        <img src="images/basket.png" id="basket">
+    </div>
+
+     <!--Start Puse Menue  popUp-->
+     <div class="pauseBox" id="pauseBox" class="text-center">
+        <div class="box-img position-relative">
+            <h1 class="pasud-header">Paused</h1>
+            <button class="btn" id="backBtn"><span>Back Again</span></button>
+            <button class="btn"><span><a href="index.html">Home</a></span></button>
+        </div>
+    </div>
+     <!--End Puse Menue  popUp-->
+    <!--Start Restart Again  popUp-->
+    <div class="main-box" id="restartBox" class="text-center">
+        <div class="box-img position-relative">
+            <h1 class="final-result">Your Score is <span id="finalScore"></span></h1>
+            <button class="btn" id="restartBtn"><span>Play Again</span></button>
+            <button class="btn"><span><a href="index.html">Home</a></span></button>
+        </div>
+    </div>
+     <!--End Restart Again  popUp-->
+
+    <!--Start Loader  -->
+    <div id="loader-container">
+        <span class="loader"></span>
+    </div>
+    <!--End Loader  -->
+    <script src="js/requestes.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
